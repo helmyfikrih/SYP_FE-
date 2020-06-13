@@ -40,12 +40,12 @@ const UserItem = (props) => {
         <CardHeader
           avatar={<Avatar alt={props.name} src={props.image} />}
           title={props.name}
-          subheader={`${props.placeCount} ${
-            props.placeCount === 1 ? "Place" : "Places"
+          subheader={`${props.places} ${
+            props.places === 1 ? "Place" : "Places"
           }`}
         />
       </Card>
-      <br/>
+      <br />
     </Link>
   );
 };

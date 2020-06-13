@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import "./PlaceItem.css";
 
 import Modal from "../../shared/components/UIElements/Modal";
+import Map from '../../shared/components/UIElements/Map';
 
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
@@ -64,7 +65,9 @@ const PlaceItem = (props) => {
             Close
           </Button>
         }>
-        <div className='map-container'>This is Map</div>
+        <div className='map-container'>
+          <Map center={props.coordinates} zoom={15} />
+        </div>
       </Modal>
       <Card className={classes.root}>
         <CardHeader
