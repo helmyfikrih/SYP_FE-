@@ -74,6 +74,7 @@ const PlaceList = props => {
                   address={place.address}
                   creatorId={place.creator}
                   coordinates={place.location}
+                  title={place.title}
                 />
               </Grid>
             ))}
